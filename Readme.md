@@ -32,10 +32,6 @@ docker-compose up
 docker-compose up --build
 docker-compose build --no-cache
 
-
-
-
-
 **docker-compose build**
 > docker-compose up
 
@@ -63,49 +59,11 @@ docker-compose build --no-cache
 
 # Testing MySQL Docker
 
-## Creating a table and inserting data
-
-```sql
-CREATE TABLE testing (
-  id INT AUTO_INCREMENT PRIMARY KEY,
-  name VARCHAR(255) NOT NULL,
-  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-); 
-```
-
-> INSERT INTO testing (name) VALUES ('First Entry');
-> INSERT INTO testing (name) VALUES ('Second Entry');
-> INSERT INTO testing (name) VALUES ('Third Entry');
-
+### sequelize
 
 **sequelize init**
 **sequelize migration:generate --name name_of_migration**
 **sequelize db:migrate**
-
-
-**testing mysql docker:**
-
-`CREATE TABLE testing (
-
-id INT AUTO_INCREMENT PRIMARY KEY,
-
-name VARCHAR(255) NOT NULL,
-
-created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-
-);`
-
-
-**INSERT INTO testing (name) VALUES ('First Entry');**
-
-**INSERT INTO testing (name) VALUES ('Second Entry');**
-
-**INSERT INTO testing (name) VALUES ('Third Entry');**
-
-
-
-
-
 
 
 **updating table users**:
@@ -113,12 +71,9 @@ created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 `sequelize migration:generate --name add-age-to-users
 
 `
-
-
 code:
 
 `'use strict';
-
 
 module.exports = {
 
