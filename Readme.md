@@ -57,7 +57,6 @@ docker-compose build --no-cache
 > DROP USER 'user'@'localhost';
 > FLUSH PRIVILEGES;
 
-# Testing MySQL Docker
 
 ### sequelize
 
