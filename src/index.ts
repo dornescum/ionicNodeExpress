@@ -6,7 +6,6 @@ import cors from "cors";
 
 const app = express();
 
-
 const PORT = parseInt(process.env.PORT as string, 10) || 3003;
 
 app.use(cors())

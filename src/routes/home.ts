@@ -3,6 +3,9 @@ import {connection} from "../db/config";
 
 const router = Router();
 
+/**
+ * just for testing
+ */
 router.get('/', (req: Request, res: Response) => {
 
     const sql = `SELECT * FROM Users`;
