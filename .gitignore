@@ -46,5 +46,3 @@ Thumbs.db
 ./src/db/config.ts
 
 ecosystem.config.js
-
-/config
